@@ -1,0 +1,39 @@
+name:                state-reader-writer
+version:             0.1.0.0
+github:              "gillchristian/state-reader-writer"
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2021 Author name here"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/gillchristian/state-reader-writer#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  state-reader-writer-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - state-reader-writer
+
+tests:
+  state-reader-writer-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - state-reader-writer
