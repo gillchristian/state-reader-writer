@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import State
 
 main :: IO ()
 main = do

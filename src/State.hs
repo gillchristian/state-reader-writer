@@ -1,17 +1,13 @@
 {-# LANGUAGE InstanceSigs #-}
 {-# LANGUAGE TupleSections #-}
 
-module Lib
-  ( someFunc,
-    reverseWithCount,
+module State
+  ( reverseWithCount,
     appendReversedWithCount,
     append3ReversedWithCount,
     State (..),
   )
 where
-
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
 
 data State s a = State {runState :: s -> (s, a)}
 
