@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0ef8132d2808198127a3cdc10b40f752923f92ffaf3680a0a5ec32aeca95ae78
+-- hash: de132fa2b6d00c65338730c5d00246d6c8cdc0d613e2933edba187c3103a0d99
 
 name:           state-reader-writer
 version:        0.1.0.0
@@ -24,8 +24,10 @@ source-repository head
 
 library
   exposed-modules:
+      Logger
       Reader
       State
+      Writer
   other-modules:
       Paths_state_reader_writer
   hs-source-dirs:
